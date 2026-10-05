@@ -12,6 +12,31 @@ sdk.dir=<your-sdk-path>
 BASE_URL=https://dummyjson.com/
 ```
 
+## Libraries
+| Library | Version | Why |
+| --- | --- | --- |
+| Kotlin | 2.2.10 | App language |
+| Android Gradle Plugin | 9.4.1 | Build |
+| Jetpack Compose BOM | 2026.02.01 | UI toolkit versions |
+| Compose Material3 | via BOM | Screens / components |
+| Compose Material Icons Extended | via BOM | Cart / delete / quantity icons |
+| Activity Compose | 1.8.0 | Compose Activity host |
+| Lifecycle Runtime / ViewModel Compose | 2.8.7 | ViewModels + lifecycle |
+| Navigation Compose | 2.8.9 | Product list → detail → cart |
+| Hilt | 2.60.1 | Dependency injection |
+| Hilt Navigation Compose | 1.2.0 | `hiltViewModel()` in screens |
+| KSP | 2.2.10-2.0.2 | Hilt / Room code gen |
+| Retrofit | 2.11.0 | DummyJSON API calls |
+| Retrofit Gson converter | 2.11.0 | JSON → Kotlin models |
+| OkHttp Logging Interceptor | 4.12.0 | HTTP client / logging |
+| Room (runtime + ktx) | 2.7.1 | Offline cart database |
+| Coil Compose | 2.7.0 | Product / cart images |
+| Kotlinx Coroutines Android | 1.10.2 | Async work + Flow |
+| AndroidX Core KTX | 1.10.1 | Kotlin Android helpers |
+Gradle catalog: `gradle/libs.versions.toml`  
+App deps: `app/build.gradle.kts`
+
+
 3. Sync Gradle and run the app.
 
 No API key needed. Min SDK is 27.
